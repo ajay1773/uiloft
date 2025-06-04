@@ -1,0 +1,134 @@
+.ui-textfield {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 20rem;
+  &__label {
+    color: var(--colors-text-text-secondary-700, #414651);
+
+    /* Text sm/Medium */
+    font-family: var(--Font-family-font-family-body, Inter);
+    font-size: var(--Font-size-text-sm, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+
+    &__asterisk {
+      color: var(--colors-text-text-brand-tertiary-600, #46865c);
+      /* Text sm/Medium */
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-sm, 14px);
+      font-style: normal;
+      font-weight: 500;
+      line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    }
+  }
+
+  &__inputWrapper {
+    box-sizing: border-box;
+    display: flex;
+    padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    align-items: center;
+    gap: var(--spacing-md, 8px);
+    align-self: stretch;
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid var(--colors-border-border-primary, #d5d7da);
+    background: var(--colors-background-bg-primary, #fff);
+    @include global-transition;
+
+    /* Shadows/shadow-xs */
+    box-shadow: 0px 1px 2px 0px
+      var(--colors-effects-shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+    &:focus-within {
+      border-radius: var(--radius-md, 8px);
+      border: 2px solid var(--colors-border-border-brand, #717680);
+      background: var(--colors-background-bg-primary, #fff);
+
+      /* Shadows/shadow-xs */
+      box-shadow: 0px 1px 2px 0px
+        var(--colors-effects-shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+    }
+
+    &--destructive {
+      border-radius: var(--radius-md, 8px);
+      border: 1px solid var(--colors-border-border-error_subtle, #fda29b);
+      background: var(--colors-background-bg-primary, #fff);
+
+      /* Shadows/shadow-xs */
+      box-shadow: 0px 1px 2px 0px
+        var(--colors-effects-shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+
+      &:focus-within {
+        border-radius: var(--radius-md, 8px);
+        border: 2px solid var(--colors-border-border-error, #f04438);
+        background: var(--colors-background-bg-primary, #fff);
+
+        /* Shadows/shadow-xs */
+        box-shadow: 0px 1px 2px 0px
+          var(--colors-effects-shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+      }
+    }
+
+    &--sm {
+      padding: var(--spacing-md, 8px) var(--spacing-lg, 12px);
+    }
+    &--md {
+      padding: 10px 14px;
+    }
+
+    &--disabled {
+      border-radius: var(--radius-md, 8px);
+      border: 1px solid var(--colors-border-border-disabled, #d5d7da);
+      background: var(--colors-background-bg-disabled_subtle, #fafafa);
+
+      /* Shadows/shadow-xs */
+      box-shadow: 0px 1px 2px 0px
+        var(--colors-effects-shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+    }
+
+    &__helperText {
+      color: var(--colors-text-text-tertiary-600, #535862);
+
+      /* Text sm/Regular */
+      font-family: var(--Font-family-font-family-body, Inter);
+      font-size: var(--Font-size-text-sm, 14px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+
+      &--destructive {
+        color: var(--colors-text-text-error-primary-600, #d92d20);
+      }
+    }
+
+    &__input {
+      width: 100%;
+      color: var(--colors-text-text-primary-900, #181d27);
+      text-overflow: ellipsis;
+      /* Text md/Regular */
+      background-color: var(--colors-background-bg-primary, #fff);
+      font-family: var(--Font-family-font-family-body, Inter);
+      font-size: var(--Font-size-text-md, 16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: var(--Line-height-text-md, 24px);
+
+      &::placeholder {
+        overflow: hidden;
+        color: var(--colors-text-text-placeholder, #717680);
+        text-overflow: ellipsis;
+
+        /* Text md/Regular */
+        font-family: var(--Font-family-font-family-body, Inter);
+        font-size: var(--Font-size-text-md, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-height-text-md, 24px); /* 150% */
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

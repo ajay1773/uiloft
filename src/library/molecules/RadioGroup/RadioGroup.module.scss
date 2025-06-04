@@ -1,0 +1,29 @@
+.ui-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ui-radio-group__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ui-radio-group__label {
+  color: var(--colors-text-text-primary-900, #181d27);
+  white-space: nowrap;
+  font-family: var(--Font-family-font-family-body, Inter);
+  font-size: var(--Font-size-text-md, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Line-height-text-md, 24px);
+  max-width: 30%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ui-radio-group__label--disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}

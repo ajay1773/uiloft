@@ -1,0 +1,86 @@
+.ui-text{
+    color: var(--colors-text-text-primary-900, #181D27);
+    font-family: var(--Font-family-font-family-body, Inter);
+
+
+    &--regular{
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    &--medium{
+        font-style: normal;
+        font-weight: 500;
+        line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    &--semibold{
+        font-style: normal;
+        font-weight: 600;
+        line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    &--bold{
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    //sizes
+
+    &--xs{
+        font-size: var(--Font-size-text-xs, 12px);
+        line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    &--sm{
+        font-size: var(--Font-size-text-sm, 14px);
+        line-height: var(--Line-height-text-sm, 20px); /* 142.857% */
+    }
+
+    &--md{
+        font-size: var(--Font-size-text-md, 16px);
+        line-height: var(--Line-height-text-md, 24px); /* 150% */
+    }
+
+    &--lg{
+        font-size: var(--Font-size-text-lg, 18px);
+        line-height: var(--Line-height-text-lg, 28px); /* 150% */
+    }
+
+    &--xl{
+        font-size: var(--Font-size-text-xl, 20px);
+        line-height: var(--Line-height-text-xl, 30px); /* 150% */
+    }
+
+    &--display-xs{
+        font-size: var(--Font-size-display-xs, 24px);
+        line-height: var(--Line-height-display-xs, 32px); /* 133.333% */
+    }
+
+    &--display-sm{
+        font-size: var(--Font-size-display-sm, 30px);
+        line-height: var(--Line-height-display-sm, 38px); /* 133.333% */
+    }
+
+    &--display-md{
+        font-size: var(--Font-size-display-md, 36px);
+        line-height: var(--Line-height-display-md, 44px); /* 133.333% */
+    }
+
+    &--display-lg{
+        font-size: var(--Font-size-display-lg, 48px);
+        line-height: var(--Line-height-display-lg, 60px); /* 133.333% */
+    }
+
+    &--display-xl{
+        font-size: var(--Font-size-display-xl, 60px);
+        line-height: var(--Line-height-display-xl, 72px); /* 133.333% */
+    }
+
+    &--display-2xl{
+        font-size: var(--Font-size-display-2xl, 72px);
+        line-height: var(--Line-height-display-2xl, 90px); /* 133.333% */
+    }
+}

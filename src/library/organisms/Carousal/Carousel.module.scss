@@ -1,0 +1,81 @@
+// Carousel.module.scss
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 0 10%; // Keep padding for centering
+}
+
+.carouselTrack {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  touch-action: pan-y pinch-zoom;
+  margin: 0 -12.5%; // Keep margin for overflow
+}
+
+.inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+  gap: 8px;
+
+  &.dragging {
+    transition: none;
+    cursor: grabbing;
+  }
+}
+
+.slide {
+  flex-shrink: 0;
+  user-select: none;
+  // Remove the fixed width: 80% to allow dynamic sizing
+  // Add padding if you want space around the content
+  padding: 0 4px; // Optional: adjust based on your needs
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm, 6px);
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background: var(--component-colors-utility-brand-utility-brand-300, #a2c1ab);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+
+  &:hover {
+    background-color: #9ca3af;
+  }
+
+  &.active {
+    display: flex;
+    height: auto;
+    width: 14px;
+    padding: 0px 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--colors-background-bg-brand-section, #006937);
+
+    color: var(--colors-text-text-primary_on-brand, #fff);
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 140% */
+    letter-spacing: -0.2px;
+  }
+}

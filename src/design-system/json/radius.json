@@ -1,0 +1,68 @@
+{
+  "radius-none": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 0
+  },
+  "radius-xxs": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 2
+  },
+  "radius-xs": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 4
+  },
+  "radius-sm": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 6
+  },
+  "radius-md": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 8
+  },
+  "radius-lg": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 10
+  },
+  "radius-xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 12
+  },
+  "radius-2xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 16
+  },
+  "radius-3xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 20
+  },
+  "radius-4xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 24
+  },
+  "radius-full": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": 9999
+  }
+}

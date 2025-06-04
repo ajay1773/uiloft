@@ -1,0 +1,74 @@
+{
+  "width-xxs": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.80 (320px)}"
+  },
+  "width-xs": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.96 (384px)}"
+  },
+  "width-sm": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.120 (480px)}"
+  },
+  "width-md": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.140 (560px)}"
+  },
+  "width-lg": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.160 (640px)}"
+  },
+  "width-xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.192 (768px)}"
+  },
+  "width-2xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.256 (1,024px)}"
+  },
+  "width-3xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.320 (1,280px)}"
+  },
+  "width-4xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.360 (1,440px)}"
+  },
+  "width-5xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.400 (1,600px)}"
+  },
+  "width-6xl": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.480 (1,920px)}"
+  },
+  "paragraph-max-width": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.180 (720px)}"
+  }
+}

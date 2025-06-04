@@ -1,0 +1,151 @@
+.ui-avatar {
+  border-radius: var(--radius-full, 9999px);
+  position: relative;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full, 9999px);
+  }
+
+  &__indicatorWrapper {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  &__initials {
+    color: var(--colors-foreground-fg-quaternary-500, #717680);
+    text-align: center;
+
+    /* Text xs/Semibold */
+    font-family: var(--Font-family-font-family-body, "Saudia Sans");
+
+    line-height: var(--Line-height-text-xs, 18px); /* 150% */
+
+    &--xs {
+      /* Text xs/Semibold */
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-xs, 12px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-text-xs, 18px); /* 150% */
+    }
+
+    &--sm {
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-md, 16px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-text-md, 24px); /* 150% */
+    }
+
+    &--md {
+      /* Text lg/Semibold */
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-lg, 18px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-text-lg, 28px); /* 155.556% */
+    }
+
+    &--lg {
+      /* Text lg/Semibold */
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-lg, 18px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-text-lg, 28px); /* 155.556% */
+    }
+
+    &--xl {
+      /* Text xl/Semibold */
+      font-family: var(--Font-family-font-family-body, "Saudia Sans");
+      font-size: var(--Font-size-text-xl, 20px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-text-xl, 30px); /* 150% */
+    }
+
+    &--2xl {
+      /* Display xs/Semibold */
+      font-family: var(--Font-family-font-family-display, "Saudia Sans");
+      font-size: var(--Font-size-display-xs, 24px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: var(--Line-height-display-xs, 32px); /* 133.333% */
+    }
+  }
+
+  &--placeholder {
+    background: var(--component-colors-components-avatars-avatar-bg, #f5f5f5);
+    border: 0.5px solid
+      var(
+        --component-colors-components-avatars-avatar-contrast-border,
+        rgba(0, 0, 0, 0.08)
+      );
+  }
+
+  &--xs {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--sm {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--md {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--lg {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--xl {
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--2xl {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--square {
+    border-radius: 4px;
+  }
+}

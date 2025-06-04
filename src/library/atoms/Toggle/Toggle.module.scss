@@ -1,0 +1,103 @@
+$root-md-width: 44px;
+$root-md-height: 24px;
+$root-sm-width: 36px;
+$root-sm-height: 20px;
+$root-slim-height: 16px;
+
+$indicator-md-width: 20px;
+$indicator-md-height: 20px;
+$indicator-sm-width: 16px;
+$indicator-sm-height: 16px;
+
+.ui-toggle {
+  display: flex;
+  width: $root-sm-width;
+  height: $root-sm-height;
+  padding: var(--spacing-xxs, 2px);
+  align-items: center;
+  border-radius: var(--radius-full, 9999px);
+  background: var(--colors-background-bg-tertiary, #f5f5f5);
+  transition: background-color 0.2s;
+  position: relative;
+  container-type: inline-size;
+  @include global-transition;
+
+  &--md {
+    display: flex;
+    width: $root-md-width;
+    height: $root-md-height;
+    padding: var(--spacing-xxs, 2px);
+    align-items: center;
+  }
+
+  &--sm {
+    width: $root-sm-width;
+    height: $root-sm-height;
+    padding: var(--spacing-xxs, 2px);
+    align-items: center;
+  }
+
+  &--slim {
+    display: flex;
+    width: 32px;
+    height: 16px;
+    align-items: center;
+    padding: 0px;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px var(--colors-background-bg-primary, #fff),
+      0px 0px 0px 4px var(--colors-effects-focus-rings-focus-ring, #717680);
+  }
+
+  &--active {
+    background: var(--colors-background-bg-brand-solid_hover, #414651);
+  }
+
+  &--disabled {
+    background: var(--colors-background-bg-tertiary, #f5f5f5);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__indicator {
+    width: $indicator-sm-width;
+    height: $indicator-sm-height;
+    flex-shrink: 0;
+    border-radius: var(--radius-full, 9999px);
+    background: var(--colors-foreground-fg-white, #fff);
+    transition: 0.2s;
+
+    box-shadow: 0px 1px 3px 0px
+        var(--colors-effects-shadows-shadow-sm_01, rgba(10, 13, 18, 0.1)),
+      0px 1px 2px -1px var(--colors-effects-shadows-shadow-sm_02, rgba(10, 13, 18, 0.1));
+
+    &--active {
+      transform: translateX(calc(100cqw - 100% - 1px));
+    }
+
+    &--md {
+      width: $indicator-md-width;
+      height: $indicator-md-height;
+      flex-shrink: 0;
+    }
+
+    &--sm {
+      width: $indicator-sm-width;
+      height: $indicator-sm-height;
+      flex-shrink: 0;
+    }
+
+    &--default {
+      width: $indicator-sm-width;
+      height: $indicator-sm-height;
+    }
+
+    &--slim {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

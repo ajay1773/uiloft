@@ -1,0 +1,20 @@
+{
+  "container-padding-mobile": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.4 (16px)}"
+  },
+  "container-padding-desktop": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.8 (32px)}"
+  },
+  "container-max-width-desktop": {
+    "attributes": {
+      "type": "number"
+    },
+    "value": "{Spacing.320 (1,280px)}"
+  }
+}

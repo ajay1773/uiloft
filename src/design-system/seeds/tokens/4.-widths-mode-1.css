@@ -1,0 +1,12 @@
+'width-xxs': 'var(--spacing-80-(320px))';
+'width-sm': 'var(--spacing-120-(480px))';
+'width-lg': 'var(--spacing-160-(640px))';
+'width-xl': 'var(--spacing-192-(768px))';
+'width-2xl': 'var(--spacing-256-(1,024px))';
+'width-3xl': 'var(--spacing-320-(1,280px))';
+'width-4xl': 'var(--spacing-360-(1,440px))';
+'width-5xl': 'var(--spacing-400-(1,600px))';
+'width-6xl': 'var(--spacing-480-(1,920px))';
+'width-md': 'var(--spacing-140-(560px))';
+'paragraph-max-width': 'var(--spacing-180-(720px))';
+'width-xs': 'var(--spacing-96-(384px))';

@@ -1,0 +1,34 @@
+.ui-spinner {
+  position: relative;
+  display: inline-block;
+
+  div {
+    width: 6%;
+    height: 16%;
+    background: #fff;
+    position: absolute;
+    left: 49%;
+    top: 43%;
+    opacity: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    animation: fade 1s linear infinite;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.25;
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .ui-spinner__bar#{$i} {
+      transform: rotate(($i - 1) * 30deg) translate(0, -130%);
+      animation-delay: calc(($i - 1) / 12) *
+        1s; // Positive delay for clockwise rotation
+    }
+  }
+}
