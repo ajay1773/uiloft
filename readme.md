@@ -17,20 +17,20 @@ Hey there! 👋 Welcome to **uiloft**, an open-source React UI library that's bu
 
 ## 🚀 What's Coming Up
 
-1. **Right Now: Building Components**
+1. **Already Done: Building Components**
 
    - Creating and maintaining React components that follow our design system
    - Making sure frontend and backend teams can work together smoothly
    - Keeping our docs up to date with props, variants, and design tokens
 
-2. **Next Up: Storybook Integration**
+2. **Already Done: Storybook Integration**
 
    - Building out our React components
    - Setting up Storybook for interactive component previews
    - Adding detailed docs, props tables, and examples
    - Showing off all the cool component variants
 
-3. **Future Plans: NPM Package**
+3. **Right Now: NPM Package**
    - Packaging everything up as an NPM package
    - Adding TypeScript support
    - Writing clear docs and guides
@@ -60,12 +60,6 @@ npm install uiloft
 yarn add uiloft
 ```
 
-## 📚 Docs
-
-- [Component Guide](docs/components.md)
-- [Design System](docs/design-system.md)
-- [Getting Started](docs/getting-started.md)
-
 ## 🤝 Contributing
 
 We love contributions! Here's how you can help:
@@ -76,15 +70,13 @@ We love contributions! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-Check out our [Contributing Guide](CONTRIBUTING.md) for more details on our development process and coding standards.
-
 ## 🐛 Bug Reports
 
-Found a bug? Please [open an issue](https://github.com/yourusername/uiloft/issues) and we'll get right on it!
+Found a bug? Please [open an issue](https://github.com/ajay1773/uiloft/issues) and we'll get right on it!
 
 ## 💡 Feature Requests
 
-Have an idea for a new feature? We'd love to hear it! [Open an issue](https://github.com/yourusername/uiloft/issues) and let's discuss.
+Have an idea for a new feature? We'd love to hear it! [Open an issue](https://github.com/ajay1773/uiloft/issues) and let's discuss.
 
 ## 📝 License
 
