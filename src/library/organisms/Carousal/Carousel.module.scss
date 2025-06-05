@@ -1,65 +1,56 @@
 // Carousel.module.scss
-.container {
-  position: relative;
+.carousel {
   width: 100%;
-  max-width: 36rem;
-  margin: 0 auto;
-  padding: 0 10%; // Keep padding for centering
-}
-
-.carouselTrack {
   position: relative;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  touch-action: pan-y pinch-zoom;
-  margin: 0 -12.5%; // Keep margin for overflow
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.inner {
+.track {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  will-change: transform;
-  gap: 8px;
+  cursor: grab;
+  width: 100%;
 
-  &.dragging {
-    transition: none;
+  &:active {
     cursor: grabbing;
+  }
+
+  [dir="rtl"] & {
+    flex-direction: row-reverse;
   }
 }
 
 .slide {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: 16px;
   flex-shrink: 0;
-  user-select: none;
-  // Remove the fixed width: 80% to allow dynamic sizing
-  // Add padding if you want space around the content
-  padding: 0 4px; // Optional: adjust based on your needs
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .indicators {
   display: flex;
   justify-content: center;
+  gap: 8px;
   align-items: center;
-  gap: var(--spacing-sm, 6px);
-  margin-top: 16px;
+
+  [dir="rtl"] & {
+    direction: ltr;
+  }
 }
 
-.dot {
+.indicator {
   width: 8px;
   height: 8px;
-  border: none;
-  border-radius: 50%;
+  border-radius: var(--radius-full, 9999px);
   background: var(--component-colors-utility-brand-utility-brand-300, #a2c1ab);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0;
 
-  &:hover {
-    background-color: #9ca3af;
-  }
-
-  &.active {
+  &--active {
     display: flex;
-    height: auto;
+    height: fit-content;
     width: 14px;
     padding: 0px 1px;
     flex-direction: column;
@@ -68,7 +59,6 @@
     gap: 10px;
     border-radius: var(--radius-full, 9999px);
     background: var(--colors-background-bg-brand-section, #006937);
-
     color: var(--colors-text-text-primary_on-brand, #fff);
     text-align: center;
     font-family: Inter;

@@ -1,7 +1,7 @@
 {
   "name": "uiloft",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "files": [
     "dist"
@@ -40,6 +40,7 @@
     "@storybook/addon-actions": "^8.4.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.16.0",
     "lodash": "^4.17.21",
     "lucide-react": "^0.468.0",
     "path": "^0.12.7",
