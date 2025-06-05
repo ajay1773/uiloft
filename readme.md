@@ -2,7 +2,7 @@
 
 Hey there! 👋 Welcome to **uiloft**, an open-source React UI library that's built on a solid design system. We've got everything you need to build beautiful, consistent, and accessible React apps. Think of it as your UI toolkit that follows atomic design principles to keep things organized and maintainable.
 
-[![npm version](https://badge.fury.io/js/uiloft.svg)](https://badge.fury.io/js/uiloft)
+[![0.1.0](https://badge.fury.io/js/uiloft.svg)](https://badge.fury.io/js/uiloft)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -14,6 +14,55 @@ Hey there! 👋 Welcome to **uiloft**, an open-source React UI library that's bu
 - Atomic design principles that make scaling a breeze
 - Flexible theming with customizable design tokens
 - Built with accessibility in mind (WCAG compliant)
+
+## 🎨 Theming System
+
+Our library comes with a comprehensive theming system that's built on CSS custom properties (variables). The `theme-variables.scss` file contains all the design tokens used throughout the components.
+
+### Theme Structure
+
+```scss
+// theme-variables.scss
+:root {
+  // Light theme variables
+  --colors-text-text-primary-900: #181d27;
+  --colors-background-bg-primary: #ffffff;
+  // ... more light theme variables
+}
+
+[data-theme="dark"] {
+  // Dark theme variables
+  --colors-text-text-primary-900: #f7f7f7;
+  --colors-background-bg-primary: #0c0e12;
+  // ... more dark theme variables
+}
+```
+
+### Using Custom Themes
+
+1. Copy the `theme-variables.scss` file to your project
+2. Customize the variables to match your brand
+3. Import the file in your main SCSS file:
+
+```scss
+@import "path/to/theme-variables.scss";
+```
+
+### Available Design Tokens
+
+- **Colors**: Text, background, border, and semantic colors
+- **Typography**: Font families, sizes, weights, and line heights
+- **Spacing**: Consistent spacing scale
+- **Border Radius**: Component corner radiuses
+- **Shadows**: Elevation and depth
+- **Component-specific**: Tokens for specific component states
+
+### Theme Switching
+
+```jsx
+// Switch between light and dark themes
+document.documentElement.setAttribute("data-theme", "dark");
+```
 
 ## 🚀 What's Coming Up
 
@@ -80,7 +129,7 @@ Have an idea for a new feature? We'd love to hear it! [Open an issue](https://gi
 
 ## 📝 License
 
-MIT License - feel free to use it however you want! See [LICENSE](LICENSE) for details.
+MIT License - feel free to use it however you want!
 
 ## 🙏 Acknowledgments
 

@@ -24,7 +24,7 @@
     color: var(--colors-text-text-tertiary-600, #535862);
 
     /* Text sm/Regular */
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 400;
@@ -79,7 +79,7 @@
       text-overflow: ellipsis;
 
       /* Text md/Regular */
-      font-family: var(--Font-family-font-family-body, Inter);
+      font-family: var(--Font-family-font-family-body, inherit);
       font-size: var(--Font-size-text-md, 16px);
       font-style: normal;
       font-weight: 400;
@@ -144,7 +144,7 @@
         text-overflow: ellipsis;
 
         /* Text md/Regular */
-        font-family: var(--Font-family-font-family-body, Inter);
+        font-family: var(--Font-family-font-family-body, inherit);
         font-size: var(--Font-size-text-md, 16px);
         font-style: normal;
         font-weight: 400;
@@ -154,7 +154,7 @@
       &__optionLabel {
         color: var(--colors-text-text-primary-900, #181d27);
         /* Text md/Medium */
-        font-family: var(--Font-family-font-family-body, Inter);
+        font-family: var(--Font-family-font-family-body, inherit);
         font-size: var(--Font-size-text-md, 16px);
         font-style: normal;
         font-weight: 500;
@@ -173,7 +173,7 @@
         text-overflow: ellipsis;
 
         /* Text md/Regular */
-        font-family: var(--Font-family-font-family-body, Inter);
+        font-family: var(--Font-family-font-family-body, inherit);
         font-size: var(--Font-size-text-md, 16px);
         font-style: normal;
         font-weight: 400;

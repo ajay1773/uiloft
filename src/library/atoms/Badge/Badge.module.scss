@@ -164,7 +164,7 @@
     padding: var(--spacing-xxs, 2px) 10px;
 
     /* Text xs/Medium */
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-xs, 12px);
     font-style: normal;
     font-weight: 500;
@@ -177,7 +177,7 @@
 
   &--md {
     padding: var(--spacing-xxs, 2px) 10px;
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 500;
@@ -190,7 +190,7 @@
   &--lg {
     /* Text sm/Medium */
     padding: var(--spacing-xs, 4px) var(--spacing-lg, 12px);
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-sm, 14px);
     font-style: normal;
     font-weight: 500;

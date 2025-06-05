@@ -24,7 +24,7 @@
   &__main {
     color: var(--colors-text-text-primary-900, #181d27);
     white-space: nowrap;
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-md, 16px);
     font-style: normal;
     font-weight: 500;
@@ -38,7 +38,7 @@
     white-space: nowrap;
 
     /* Text md/Regular */
-    font-family: var(--Font-family-font-family-body, Inter);
+    font-family: var(--Font-family-font-family-body, inherit);
     font-size: var(--Font-size-text-md, 16px);
     font-style: normal;
     font-weight: 400;

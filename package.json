@@ -1,22 +1,24 @@
 {
   "name": "uiloft",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/uiloft.umd.cjs",
-  "module": "./dist/uiloft.js",
+  "main": "./dist/uiloft.umd.js",
+  "module": "./dist/uiloft.es.js",
   "types": "dist/uiloft.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/uiloft.js",
-      "require": "./dist/uiloft.umd.cjs"
+      "import": "./dist/uiloft.es.js",
+      "require": "./dist/uiloft.umd.js",
+      "types": "./dist/uiloft.d.ts"
     },
     "./styles": {
       "import": "./dist/style.css",
-      "require": "./dist/style.css"
+      "require": "./dist/style.css",
+      "types": "./dist/library/styles.d.ts"
     }
   },
   "scripts": {
@@ -42,9 +44,6 @@
     "lucide-react": "^0.468.0",
     "path": "^0.12.7",
     "postcss-js": "^4.0.1",
-    "react": "^18.3.1",
-    "react-aria-components": "^1.5.0",
-    "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.2",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
@@ -75,6 +74,8 @@
     "eslint-plugin-storybook": "^0.11.1",
     "globals": "^15.12.0",
     "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sass": "^1.77.6",
     "storybook": "^8.4.5",
     "tailwindcss": "^3.4.15",
@@ -89,5 +90,21 @@
       "plugin:storybook/recommended",
       "plugin:storybook/recommended"
     ]
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "resolutions": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

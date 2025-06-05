@@ -21,22 +21,37 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
       tsconfigPath: "./tsconfig.app.json",
+      include: [
+        "src/library/**/*.ts",
+        "src/library/**/*.tsx",
+        "src/library/**/*.d.ts",
+      ],
+      outDir: "dist",
+      copyDtsFiles: true,
     }),
   ],
   build: {
     lib: {
       entry: resolve(__dirname, "src/library/main.ts"),
       name: "uiloft",
-      fileName: "uiloft",
+      fileName: (format) => `uiloft.${format}.js`,
+      formats: ["es", "umd"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "jsxRuntime",
         },
+        format: "es",
+        exports: "named",
       },
+    },
+    commonjsOptions: {
+      include: [/node_modules/],
+      transformMixedEsModules: true,
     },
   },
   resolve: {

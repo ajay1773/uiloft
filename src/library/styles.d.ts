@@ -1,3 +1,8 @@
+declare module "uiloft/styles" {
+  const styles: Record<string, unknown>;
+  export default styles;
+}
+
 declare module "*.module.scss" {
   const classes: { readonly [key: string]: string };
   export default classes;
